@@ -6,22 +6,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-import { init } from 'commandbar';
-init('81136260');
-
-const App = ({ children }) => {
-  useEffect(() => {
-    const loggedInUserId = '12345'; // example
-    window.CommandBar.boot(loggedInUserId).then(() => {
-      // ...
-    });
-
-    return () => {
-      window.CommandBar.shutdown();
-    }
-  }, []);
-}
-
 const links = [
   {
     text: "Tutorial",
